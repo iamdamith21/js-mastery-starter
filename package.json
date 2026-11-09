@@ -1,0 +1,23 @@
+{
+  "name": "js-mastery-starter",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Independent JavaScript practice and CampusDesk portfolio-project starter",
+  "scripts": {
+    "dev": "node tools/dev-server.js",
+    "day1": "node \"practice/week 01/day-01.js\"",
+    "day2": "node \"practice/week 01/day-02.js\"",
+    "day3": "node \"practice/week 01/day-03.js\"",
+    "day4": "node \"practice/week 01/day-04.js\"",
+    "day5": "node \"practice/week 01/day-05.js\"",
+    "day6": "node \"practice/week 01/day-06.js\"",
+    "day7": "node \"practice/week 01/day-07.js\"",
+    "test": "node --test",
+    "test:engine": "node --test tests/ticket-engine.test.js",
+    "test:day2": "node --test --test-name-pattern=\"validateTitle\" tests/ticket-engine.test.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

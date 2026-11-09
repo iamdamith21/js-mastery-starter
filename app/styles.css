@@ -1,0 +1,5 @@
+/* Day 8: style your app in your own design. Starting minimum styles only. */
+:root { font-family: system-ui, sans-serif; color-scheme: light; }
+body { margin: 0; background: #f6f7fb; color: #171923; }
+header { padding: 1.5rem; background: white; border-bottom: 1px solid #e3e6eb; }
+main { max-width: 900px; margin: 1.5rem auto; padding: 1rem; }
