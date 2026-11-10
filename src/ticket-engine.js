@@ -29,12 +29,23 @@ export function validateTitle(title) {
 
 // Day 3: return a NEW array of tickets with status === 'open'.
 export function getOpenTickets(tickets) {
-  throw new Error("TODO: implement getOpenTickets (Day 3)");
+  return tickets.filter((ticket) => ticket.status === "open");
 }
 
 // Day 3: return { open: number, 'in-progress': number, resolved: number }.
 export function countByStatus(tickets) {
-  throw new Error("TODO: implement countByStatus (Day 3)");
+  const counts = {
+    open: 0,
+    "in-progress": 0,
+    resolved: 0,
+  };
+
+  for (const ticket of tickets) {
+    if (Object.hasOwn(counts, ticket.status)) {
+      counts[ticket.status]++;
+    }
+  }
+  return counts;
 }
 
 // Day 4: validate inputs and return a NEW ticket with status 'open'.

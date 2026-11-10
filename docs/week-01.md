@@ -15,10 +15,10 @@
 - **Next:** Day 03 — `getOpenTickets()` and `countByStatus()`.
 
 ## Day 03 · Arrays + objects · 2026-11-09
-- **Learned:**
-- **Built / tested:**
-- **Mistake → fix:**
-- **Next:**
+- **Learned:** `.filter()` selects objects; `.map()` transforms elements; `for...of` iterates over array items.
+- **Built / tested:** `getOpenTickets()` and `countByStatus()` — corrected focused tests pass.
+- **Mistake → fix:** Returned IDs instead of ticket objects; converted counts into strings; missed empty-array return.
+- **Next:** Re-test corrected functions, then proceed to Day 04 `createTicket()`.
 
 ## Day 04 · Creating tickets · 2026-11-10
 - **Learned:**
