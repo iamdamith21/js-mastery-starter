@@ -52,7 +52,28 @@ export function countByStatus(tickets) {
 // Valid categories: it, facilities, other. Valid priorities: low, medium, high.
 // Throw Error for an invalid title, category, or priority.
 export function createTicket(input, id, createdAt) {
-  throw new Error("TODO: implement createTicket (Day 4)");
+  if (!input || !validateTitle(input.title)) {
+    throw new Error("Invalid title");
+  }
+
+  const allowedCategories = ["it", "facilities", "other"];
+  if (!allowedCategories.includes(input.category)) {
+    throw new Error("Invalid category");
+  }
+
+  const allowedPriorities = ["low", "medium", "high"];
+  if (!allowedPriorities.includes(input.priority)) {
+    throw new Error("Invalid priority");
+  }
+
+  return {
+    id,
+    title: input.title.trim(),
+    category: input.category,
+    priority: input.priority,
+    status: "open",
+    createdAt,
+  };
 }
 
 // Day 5: return a NEW array and a NEW version of the matching ticket.

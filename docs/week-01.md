@@ -23,12 +23,12 @@
 - **Mistake → fix:** Returned IDs instead of ticket objects; converted counts into strings; missed empty-array return.
 - **Next:** Re-test corrected functions, then proceed to Day 04 `createTicket()`.
 
-## Day 04 · Creating tickets · 2026-11-10
+## Day 04 · Creating tickets · 2026-11-12
 
-- **Learned:**
-- **Built / tested:**
-- **Mistake → fix:**
-- **Next:**
+- **Learned:** Object spread, immutability, validation and `throw`.
+- **Built / tested:** `createTicket()` — record tests passed.
+- **Mistake → fix:** Forgot to validate priority; added an allowed-priority check before returning the ticket.
+- **Next:** Day 05 — update and remove tickets without mutation.
 
 ## Day 05 · Immutable updates · 2026-11-11
 
