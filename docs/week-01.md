@@ -32,10 +32,10 @@
 
 ## Day 05 · Immutable updates · 2026-11-11
 
-- **Learned:**
-- **Built / tested:**
-- **Mistake → fix:**
-- **Next:**
+- **Learned:** Immutability, object spread, .map() for updates and .filter() for deletion.
+- **Built / tested:** updateTicketStatus() and removeTicket() — record tests passed.
+- **Mistake → fix:** Forgot to use .includes() with valid status list; use .includes() as more optimized way.
+- **Next:** Day 06 - search, status and priority filtering.
 
 ## Day 06 · Filtering + modules · 2026-11-12
 

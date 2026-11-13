@@ -80,12 +80,22 @@ export function createTicket(input, id, createdAt) {
 // Allowed statuses: open, in-progress, resolved.
 // Throw Error for invalid status; leave all tickets unchanged if ID is missing.
 export function updateTicketStatus(tickets, id, status) {
-  throw new Error("TODO: implement updateTicketStatus (Day 5)");
+  const statusList = ["open", "in-progress", "resolved"];
+  if (!statusList.includes(status)) {
+    throw new Error("Invalid Status.");
+  }
+
+  return tickets.map((ticket) => {
+    if (ticket.id === id) {
+      return { ...ticket, status: status };
+    }
+    return ticket;
+  });
 }
 
 // Day 5: return a NEW array excluding the ticket with the specified id.
 export function removeTicket(tickets, id) {
-  throw new Error("TODO: implement removeTicket (Day 5)");
+  return tickets.filter((ticket) => ticket.id !== id);
 }
 
 // Day 6 / Day 10: apply AND-based search/status/priority filtering.
